@@ -1,0 +1,171 @@
+.education h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.education-card {
+  background: rgba(44, 62, 80, 0.3);
+  padding: 35px;
+  border-radius: 12px;
+  border-left: 4px solid #3498db;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.education-card:hover {
+  background: rgba(52, 73, 94, 0.4);
+  box-shadow: 0 6px 25px rgba(52, 152, 219, 0.3);
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.edu-header h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.university {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.period {
+  background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.location {
+  color: #95a5a6;
+  font-size: 1.1rem;
+}
+
+.section-title {
+  margin-top: 60px;
+}
+
+.languages-grid, .focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .languages-grid, .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lang-card, .focus-card {
+  background: rgba(44, 62, 80, 0.3);
+  padding: 35px;
+  border-radius: 12px;
+  border-top: 4px solid #3498db;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.lang-card:hover, .focus-card:hover {
+  background: rgba(52, 73, 94, 0.4);
+  box-shadow: 0 6px 25px rgba(52, 152, 219, 0.3);
+}
+
+.lang-card h3, .focus-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.lang-card ul, .focus-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lang-card li, .focus-card li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #bdc3c7;
+  line-height: 1.6;
+}
+
+.lang-card li::before, .focus-card li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.hackathon-card {
+  background: rgba(44, 62, 80, 0.3);
+  padding: 35px;
+  border-radius: 12px;
+  border-left: 4px solid #3498db;
+  margin-top: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.hackathon-card:hover {
+  background: rgba(52, 73, 94, 0.4);
+  box-shadow: 0 6px 25px rgba(52, 152, 219, 0.3);
+}
+
+.hackathon-card h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.hackathon-card p {
+  color: #bdc3c7;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.hackathon-card a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.hackathon-card a:hover {
+  color: #5dade2;
+}
+
+@media (max-width: 768px) {
+  .edu-header {
+    flex-direction: column;
+  }
+  
+  .languages-grid, .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}

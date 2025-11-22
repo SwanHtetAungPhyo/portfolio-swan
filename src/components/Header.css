@@ -1,0 +1,129 @@
+.header {
+  background: linear-gradient(135deg, #1a1f2e 0%, #252d3d 100%);
+  padding: 50px 80px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid #2c3e50;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #3498db;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 1rem;
+  color: #95a5a6;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.contact-info a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3498db;
+  transition: width 0.3s;
+}
+
+.contact-info a:hover {
+  color: #5dade2;
+}
+
+.contact-info a:hover::after {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.nav button {
+  padding: 12px 28px;
+  border: none;
+  background: rgba(52, 73, 94, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  color: #95a5a6;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.nav button:hover {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  transform: translateY(-2px);
+}
+
+.nav button.active {
+  background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+  color: white;
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.4);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 40px 60px;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 20px;
+    position: relative;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .nav button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
